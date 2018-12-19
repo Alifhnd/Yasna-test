@@ -1,0 +1,41 @@
+/*
+*-------------------------------------------------------
+* Layout / Grid
+*-------------------------------------------------------
+*/
+
+.panel-cols{
+  display: flex;
+  padding: 0 15px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  [class^=panel-col]{
+    flex-grow: 1;
+    flex-basis: 0;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .panel-col-2{
+    flex-grow: 2;
+  }
+
+  .panel-col-3{
+    flex-grow: 3;
+  }
+
+  .panel-col-4{
+    flex-grow: 4;
+  }
+
+  .panel-col-5{
+    flex-grow: 5;
+  }
+
+  .panel-col-6{
+    flex-grow: 6;
+  }
+}

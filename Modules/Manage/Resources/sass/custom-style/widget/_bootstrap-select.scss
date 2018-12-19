@@ -1,0 +1,19 @@
+/*
+*-------------------------------------------------------
+* Bootstrap select fix
+*-------------------------------------------------------
+*/
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  text-align: $start;
+
+}
+
+div.bootstrap-select {
+  .bs-caret {
+    position: absolute;
+    @include end(30px);
+    top: 45%;
+  }
+
+}

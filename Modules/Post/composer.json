@@ -1,0 +1,15 @@
+{
+    "name": "nwidart/post",
+    "description": "",
+    "authors": [
+        {
+            "name": "Ali",
+            "email": "Ali.fallah9270@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modules\\Post\\": ""
+        }
+    }
+}

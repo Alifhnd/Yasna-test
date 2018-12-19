@@ -1,0 +1,12 @@
+/*
+*-------------------------------------------------------
+* Taha Custom Button
+*-------------------------------------------------------
+*/
+
+.btn-taha{
+  min-width: unset !important;
+  @media(min-width: 1258px){
+    min-width: 150px !important;
+  }
+}

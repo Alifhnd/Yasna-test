@@ -1,0 +1,176 @@
+/* ========================================================================
+     Component: typo
+ ========================================================================== */
+
+
+/*
+*-------------------------------------------------------
+* IranYekan Font
+* - Header Font
+* - Title Font
+*-------------------------------------------------------
+*/
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/iranyekan/eot/iranyekanwebbold.eot');
+  src: url('../fonts/iranyekan/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/iranyekan/woff2/iranyekanwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/iranyekan/woff/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/iranyekan/ttf/iranyekanwebbold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/iranyekan/eot/iranyekanweblight.eot');
+  src: url('../fonts/iranyekan/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/iranyekan/woff2/iranyekanweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/iranyekan/woff/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/iranyekan/ttf/iranyekanweblight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/iranyekan/eot/iranyekanwebregular.eot');
+  src: url('../fonts/iranyekan/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/iranyekan/woff2/iranyekanwebregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/iranyekan/woff/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/iranyekan/ttf/iranyekanwebregular.ttf') format('truetype');
+}
+
+/* Latin fonts (Roboto) */
+
+@font-face {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/iranyekan/eot/robotobold.eot');
+  src: url('../fonts/iranyekan/eot/robotobold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/iranyekan/woff2/robotobold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/iranyekan/woff/robotobold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/iranyekan/ttf/robotobold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/iranyekan/eot/robotolight.eot');
+  src: url('../fonts/iranyekan/eot/robotolight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/iranyekan/woff2/robotolight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/iranyekan/woff/robotolight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/iranyekan/ttf/robotolight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/iranyekan/eot/robotoregular.eot');
+  src: url('../fonts/iranyekan/eot/robotoregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('../fonts/iranyekan/woff2/robotoregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/iranyekan/woff/robotoregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/iranyekan/ttf/robotoregular.ttf') format('truetype');
+}
+
+
+/*
+*-------------------------------------------------------
+* Vazir Font
+* - Content Font
+*-------------------------------------------------------
+*/
+
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/vazir/Vazir.eot');
+  src: url('../fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/vazir/Vazir.woff2') format('woff2'),
+  url('../fonts/vazir/Vazir.woff') format('woff'),
+  url('../fonts/vazir/Vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/vazir/Vazir-Bold.eot');
+  src: url('../fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/vazir/Vazir-Bold.woff2') format('woff2'),
+  url('../fonts/vazir/Vazir-Bold.woff') format('woff'),
+  url('../fonts/vazir/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/vazir/Vazir-Black.eot');
+  src: url('../fonts/vazir/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/vazir/Vazir-Black.woff2') format('woff2'),
+  url('../fonts/vazir/Vazir-Black.woff') format('woff'),
+  url('../fonts/vazir/Vazir-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/vazir/Vazir-Medium.eot');
+  src: url('../fonts/vazir/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/vazir/Vazir-Medium.woff2') format('woff2'),
+  url('../fonts/vazir/Vazir-Medium.woff') format('woff'),
+  url('../fonts/vazir/Vazir-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/vazir/Vazir-Light.eot');
+  src: url('../fonts/vazir/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/vazir/Vazir-Light.woff2') format('woff2'),
+  url('../fonts/vazir/Vazir-Light.woff') format('woff'),
+  url('../fonts/vazir/Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/vazir/Vazir-Thin.eot');
+  src: url('../fonts/vazir/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/vazir/Vazir-Thin.woff2') format('woff2'),
+  url('../fonts/vazir/Vazir-Thin.woff') format('woff'),
+  url('../fonts/vazir/Vazir-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+body {
+  // Vazir font as the default font for elements
+  font-family: Vazir, sans-serif;
+  color: #656565;
+  &[dir=rtl]{
+    letter-spacing: normal;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+// IranYekan Font used for
+// Titles, Headings, Buttons
+h1, h2, h3, h4, h5, h5,
+.h1, .h2, .h2, .h3, .h5, .h6,
+.modal-title,
+.panel-title,
+.panel-heading,
+.font-yekan,
+.panel-toolbar p.title,
+.nav-tabs > li > a{
+  font-family: iranyekan, sans-serif;
+}

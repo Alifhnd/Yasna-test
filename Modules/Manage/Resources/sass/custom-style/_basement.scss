@@ -1,0 +1,420 @@
+/*
+|--------------------------------------------------------------------------
+| Font Corrections
+|--------------------------------------------------------------------------
+| 
+*/
+
+.btn{
+  font-weight: 500;
+}
+
+.btn {
+  i.fa {
+    @include margin-start(0);
+    @include margin-end(4px);
+    font-size: larger;
+    position: relative;
+    top: +2px;
+  }
+}
+
+.form-control:read-only {
+  background-color: inherit;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+div.mce-fullscreen {
+  z-index: 1050;
+}
+.phpdebugbar {
+  direction: ltr;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-wide {
+  letter-spacing: 1px;
+}
+
+
+.text-medium {
+  font-weight: 500;
+}
+.text-normal {
+  font-weight: 400;
+}
+.text-light {
+  font-weight: 200;
+}
+.text-ultralight {
+  font-weight: 100;
+}
+
+.font-tahoma {
+  font-family: Tahoma, sans-serif;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Bootstrap Corrections
+|--------------------------------------------------------------------------
+|
+*/
+
+.breadcrumb {
+  background-color: inherit;
+}
+
+.badge-warning {
+  background-color: #d58512;
+}
+
+.badge-success {
+  background-color: #449D44;
+}
+
+.badge-info {
+  background-color: #269abc;
+}
+
+.badge-inverse {
+  background-color: #333333;
+}
+
+.form-control[disabled] {
+  background-color: white;
+  color: #878787;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.modal-footer {
+  text-align: $start;
+}
+
+/*
+|--------------------------------------------------------------------------
+| General Things
+|--------------------------------------------------------------------------
+| 
+*/
+
+
+.row {
+  //width: 100%;
+}
+
+.noContent {
+  color: lightgray;
+  font-style: italic ;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.null-content {
+  font-style: italic;
+  color: gainsboro;
+  font-weight: 100;
+}
+
+
+.line-through {
+  text-decoration: line-through;
+}
+.bordered {
+  border: 1px solid;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Loops
+|--------------------------------------------------------------------------
+| 
+*/
+
+@for $i from 2 to 21 {
+  .w#{$i*5} {
+    width: 5% * $i;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@for $i from 5 to 29 {
+  .f#{$i} {
+    font-size: 1px * $i;
+    @if($i<=10) {
+      font-weight: 100 ;
+    }
+  }
+}
+
+@for $i from 4 to 11 {
+  .f#{$i*5} {
+    font-size: 5px * $i;
+  }
+}
+
+@for $i from 1 to 10 {
+  .ph#{$i*5} {
+    padding-left: 5px * $i;
+    padding-right: 5px * $i;
+  }
+  .pv#{$i*5} {
+    padding-top: 5px * $i;
+    padding-bottom: 5px *$i;
+  }
+
+  .mh#{$i*5} {
+    margin-left: 5px * $i;
+    margin-right: 5px * $i;
+  }
+  .mhl#{$i*5} {
+    margin-left: 5px * $i;
+  }
+  .mhr#{$i*5} {
+    margin-right: 5px * $i;
+  }
+  .mv#{$i*5} {
+    margin-top: 5px * $i;
+    margin-bottom: 5px *$i;
+  }
+  .mvt#{$i*5} {
+    margin-top: 5px * $i;
+  }
+  .mvb#{$i*5} {
+    margin-bottom: 5px *$i;
+  }
+
+
+
+}
+@for $i from 1 to 10 {
+  .p#{$i*5} {
+    @extend .ph#{$i*5};
+    @extend .pv#{$i*5};
+  }
+  .m#{$i*5} {
+    @extend .mh#{$i*5};
+    @extend .mv#{$i*5};
+  }
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Color Codes...
+|--------------------------------------------------------------------------
+| 
+*/
+
+.text-almostBlack {
+  color: #070707;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-darkgray {
+  color: darkgray;
+}
+
+.text-green {
+  color: #8bba12;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-purple {
+  color: #9013FE;
+}
+
+.text-teal{
+  color: #23999d;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-brown {
+  color: #4F3111 ;
+}
+
+.text-black {
+  color: #3e3e3e;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-violet {
+  color: #4F5B93 ;
+}
+.text-orange {
+  color: #F18432 ;
+}
+
+.text-pink {
+  color: #A400AC ;
+}
+.text-orangered {
+  color: #A400AC ;
+}
+
+
+.panel-violet {
+  border-color: #cfdbe2;
+  border-top-color: #4F5B93;
+
+  & > .panel-heading {
+    border-top: 3px solid #4F5B93;
+    background-color: #fcfcfd;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+
+.panel-black {
+  border-color: #cfdbe2;
+  border-top-color: #34312d;
+
+  & > .panel-heading {
+    border-top: 3px solid #34312d;
+    background-color: #fcfcfd;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+
+.panel-orange {
+  border-color: #cfdbe2;
+  border-top-color: #F18432;
+
+  & > .panel-heading {
+    border-top: 3px solid #F18432;
+    background-color: #fcfcfd;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+
+.panel-pink {
+  border-color: #cfdbe2;
+  border-top-color: #A400AC;
+
+  & > .panel-heading {
+    border-top: 3px solid #A400AC;
+    background-color: #fcfcfd;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+
+.panel-orangered {
+  border-color: #cfdbe2;
+  border-top-color: orangered;
+
+  & > .panel-heading {
+    border-top: 3px solid orangered;
+    background-color: #fcfcfd;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+
+
+.bg-red {
+  background: #E24C5F;
+  color: #fff;
+}
+.bg-orange {
+  background: rgba(255, 143, 48, 0.27);
+  color: #fff;
+}
+.bg-yellow {
+  background: #f8e694;
+  color: #fff;
+}
+.bg-green {
+  background: #66AC19;
+  color: #fff;
+}
+.bg-teal {
+  background: #23999d;
+  color: #fff;
+}
+.bg-blue {
+  background: blue;
+  color: #fff;
+}
+.bg-purple {
+  background: #9013FE;
+  color: #fff;
+}
+.bg-brown {
+  background: #4F3111;
+  color: #fff;
+}
+.bg-gray {
+  background: #a0a0a0;
+  color: #fff;
+}
+.bg-dark {
+  background: #000000;
+  color: #fff;
+}
+.bg-light {
+  background: #ededed;
+  color: #515253;
+}
+.bg-ultralight {
+  background: #f6f6f6;
+  color: #515253;
+}
+.bg-white {
+  background: white;
+  color: #515253;
+}
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Loading Effect
+|--------------------------------------------------------------------------
+|
+*/
+
+.loading {
+  opacity: 0.2;
+  cursor: wait;
+}
+
+.refresh {
+  display: none;
+  visibility: hidden;
+}

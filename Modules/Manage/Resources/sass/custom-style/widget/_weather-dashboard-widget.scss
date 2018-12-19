@@ -1,0 +1,64 @@
+/*
+*-------------------------------------------------------
+* Weather Dashboard Widget
+*-------------------------------------------------------
+*/
+
+.weather-dashboard-widget{
+  margin-bottom: 5px;
+  .widget{
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    color: #fff;
+    padding: 20px;
+    .weather-container{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .text{
+        min-width: 150px;
+        width: 50%;
+      }
+      .visual{
+        min-width: 150px;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .temperature{
+          >span{
+            font-size: 90px;
+          }
+        }
+      }
+    }
+
+    .weather-data-row {
+      .title{
+        text-align: center;
+        span{
+          line-height: 30px;
+          display: inline-block;
+          height: 30px;
+        }
+        .wi{
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+      .text{
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+      }
+      &.wind-speed{
+        .text{
+          direction: ltr;
+          text-align: $start;
+        }
+      }
+    }
+  }
+}

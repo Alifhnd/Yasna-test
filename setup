@@ -1,0 +1,58 @@
+red=`tput setaf 1`
+green=`tput setaf 2`
+pink=`tput setaf 5`
+reset=`tput sgr0`
+
+#=========================================================
+echo ""
+echo "${pink} STEP 1. Let's start fresh... ${reset}"
+
+cd app; rm -rf Models; cd ..
+echo "${green}Models directory deleted! ${reset}"
+
+cd storage/framework/cache ; rm -rf data; mkdir data ; cd ../../..
+echo "${green}Caches directory deleted! ${reset}"
+
+#=========================================================
+echo ""
+echo "${pink} STEP 2. Core Migrations... ${reset}"
+php artisan migrate:fresh
+
+php artisan module:migrate Yasna
+php artisan yasna:init
+
+#=========================================================
+echo ""
+echo "${pink} STEP 3. Core Seed... ${reset}"
+
+php artisan module:seed Yasna
+
+php artisan yasna:enable "$1"
+
+sh i --no-check
+sh i --no-check
+
+#=========================================================
+echo ""
+echo "${pink} STEP 4. Modules Migrations... ${reset}"
+
+php artisan module:migrate
+
+php artisan yasna:init
+
+#=========================================================
+echo ""
+echo "${pink} STEP 5. Modules Seed... ${reset}"
+
+php artisan module:seed
+
+#=========================================================
+echo ""
+echo "${pink} That's it! Active Modules: ${reset}"
+echo ""
+php artisan yasna:list
+
+#=========================================================
+echo ""
+echo "${pink} See? God created his universe in six days. I did mine in five. ${reset}"
+

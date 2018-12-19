@@ -1,0 +1,15 @@
+{
+    "name": "nwidart/trans",
+    "description": "",
+    "authors": [
+        {
+            "name": "Parsa Mihandoost",
+            "email": "mihandoost.p@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modules\\Trans\\": ""
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Modules\Yasna\Services\YasnaProvider;
+
+/**
+ * Class $CLASS$
+ *
+ * @package $NAMESPACE$
+ */
+class $CLASS$ extends YasnaProvider
+{
+    /**
+     * This will be automatically loaded in the app boot sequence if the module is active.
+     *
+     * @return void
+     */
+    public function index()
+    {
+        // Call your methods here!
+    }
+}

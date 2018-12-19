@@ -1,0 +1,31 @@
+/*
+*-------------------------------------------------------
+* Site Setting
+*-------------------------------------------------------
+*/
+
+// Mixins
+@import "mixins";
+
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+// Fonts
+@import "font-yekan"; // old manage sass
+// = Colors
+// -----------------------------
+
+
+// Graphic chart
+
+
+// = break Points
+// -----------------------------
+$tablet: 767px;
+$mobile: 424px;
+
+
+// Silent classes
+@import "silent-classes";

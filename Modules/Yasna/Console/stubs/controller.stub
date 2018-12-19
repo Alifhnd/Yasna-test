@@ -1,0 +1,13 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use Modules\Yasna\Services\YasnaController;
+
+/**
+* Class $CLASS$
+* @package $CLASS_NAMESPACE$
+*/
+class $CLASS$ extends YasnaController
+{
+}

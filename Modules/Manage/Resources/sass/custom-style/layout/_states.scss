@@ -1,0 +1,52 @@
+/*
+*-------------------------------------------------------
+* State Classes
+*-------------------------------------------------------
+*/
+
+/*
+* Media show/hide control classes
+**/
+
+//  Media Sizes
+$tablet_max: 767px;
+$tablet_min: 768px;
+
+$mobile_max: 424px;
+$mobile_min: 425px;
+
+
+// Not show on
+.not-on-desktop{
+  @media (min-width: $tablet_min){
+    display: none !important;
+  }
+}
+.not-on-tablet{
+  @media (min-width: $mobile_min) and (max-width: $tablet_max) {
+    display: none !important;
+  }
+}
+.not-on-mobile{
+  @media (max-width: $mobile_max) {
+    display: none !important;
+  }
+}
+
+
+// Only show on
+.only-on-desktop{
+  @media (max-width: $tablet_max) {
+    display: none !important;
+  }
+}
+.only-on-tablet{
+  @media (min-width: $tablet_min) , (max-width: $mobile_max) {
+    display: none !important;
+  }
+}
+.only-on-mobile{
+  @media (min-width: $mobile_min) {
+    display: none !important;
+  }
+}

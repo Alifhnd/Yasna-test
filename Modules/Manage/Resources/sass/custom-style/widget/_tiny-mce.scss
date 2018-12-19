@@ -1,0 +1,32 @@
+/*
+*-------------------------------------------------------
+* Tiny MCE
+*-------------------------------------------------------
+*/
+body.mce-fullscreen > .wrapper > section{
+	z-index: 9999;
+}
+.mce-tinymce{
+  &.mce-fullscreen{
+    top: 0;
+	  right: 0;
+	  left: 0;
+    bottom:0;
+  }
+}
+
+.mce-container, .mce-container-body{
+	text-align: right !important;
+}
+.mce-txt, .mce-text{
+	font-size: 13px !important;
+	font-family: Vazir, sans-serif !important;
+	text-align: right !important;
+}
+.mce-toolbar + .mce-toolbar{
+	border-top: 1px solid #d9d9d9 !important;
+}
+.mce-tooltip .mce-tooltip-inner{
+	font-size: 12px !important;
+	font-family: Vazir, sans-serif !important;
+}

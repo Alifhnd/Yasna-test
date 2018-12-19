@@ -1,0 +1,25 @@
+/*
+*-------------------------------------------------------
+* Layout / Tabs
+*-------------------------------------------------------
+*/
+
+.panel{
+  .nav-tabs{
+    li{
+     a{
+       @media (max-width: 767px) {
+          margin-bottom: 0;
+       }
+     }
+    }
+  }
+
+  .tab-content{
+    .tab-pane{
+      .tForms{
+        max-width: unset;
+      }
+    }
+  }
+}

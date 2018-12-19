@@ -1,0 +1,39 @@
+/*
+*-------------------------------------------------------
+* Analog Clock
+*-------------------------------------------------------
+*/
+
+.analog-clock{
+  canvas{
+    margin: 0 auto;
+    display: block;
+  }
+}
+.dates{
+  .ltr{
+    direction: ltr;
+  }
+  .today{
+    width: 100%;
+    & *{
+      font-size: 18px;
+    }
+    .day{
+      display: inline-block;
+      margin: 0 5px;
+      color: #666;
+    }
+    .date-full{
+      display: inline-block;
+      margin: 0 5px;
+      & *{
+        color: #333;
+      }
+      .separator{
+        color: #f05050;
+        font-weight: 600;
+      }
+    }
+  }
+}

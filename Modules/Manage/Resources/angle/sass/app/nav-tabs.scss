@@ -1,0 +1,51 @@
+/* ========================================================================
+   Component: Nav Tabs
+ ========================================================================== */
+
+
+// Bootstrap tabs redesign
+// ----------------------------------------------
+
+$nav-top-bg-end:  $brand-info-light;
+
+.main-nav-tabs{
+  &.nav-tabs{
+    border-bottom: 4px solid $nav-top-bg-end;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    
+    > li {
+
+      margin-bottom: 0;
+      &.active{
+        > a{
+          margin-bottom: -4px;
+          border-bottom-color: #fff;
+          background: $nav-top-bg-end;
+          color: #fff;
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+          border: 0;
+
+          &:hover{
+            color: #fff;
+            background-color: $nav-top-bg-end;
+            border: 0;
+          }
+        }
+      }
+      > a{
+        background: #fff;
+        padding: 15px 20px;
+        color: #888;
+        border: 0;
+        font-weight: 400;
+        &:hover{
+          color: $nav-top-bg-end;
+        }
+      }
+    }
+  }
+}
+

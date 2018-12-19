@@ -1,0 +1,84 @@
+/**
+ * MD Editor
+ * -------------------------
+ * Created Negar Jamalifard
+ * n.jamalifard@gmail.com
+ * On 2018-07-11
+ */
+
+.md_editor{
+	position: relative;
+	border: 1px solid #d6d6d6;
+	border-radius: 2px;
+}
+
+.md_editor::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.md_editor > .toolbar{
+	height: 40px;
+	background: #e8e8e8;
+	display: flex;
+	//padding: 0 15px;
+}
+
+.md_editor > .toolbar > .tool{
+	height: 100%;
+	padding: 0 10px;
+	border-left: 1px solid #ddd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	min-width: 88px;
+	font-weight: 500;
+	background-color: #f0f0f0;
+}
+.md_editor > .toolbar > .tool:hover{
+	background-color: #f9f9f9;
+}
+
+
+.md_editor > .markdown-container{
+	float: left;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 30px;
+	border-radius: 0;
+}
+
+.md_editor > .html_container{
+	display: none;
+}
+
+.md_editor > .markdown_preview{
+	position: absolute;
+	top: 40px;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: white;
+	display: none;
+	padding: 30px;
+	border: 2px solid #5d9cec;
+	border-radius: 3px;
+	cursor: not-allowed;
+}
+
+.md_editor > .markdown_preview pre,
+.md_editor > .markdown_preview code{
+	direction: ltr;
+}
+
+
+.md_editor > .markdown_preview.show{
+	display: block;
+	z-index: 2;
+}
+
+

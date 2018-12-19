@@ -1,0 +1,183 @@
+/*
+*-------------------------------------------------------
+* Sign up and login page
+*-------------------------------------------------------
+*/
+
+//height 100%
+html,body,.wrapper{
+  height: 100%;
+  width:100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login{
+  //background: -webkit-gradient(linear,left top,right top,from(#ff8929),to(#ce5951)) repeat scroll 0 0;
+  //background: linear-gradient(90deg,#ff8929,#ce5951) repeat scroll 0 0;
+  background: -webkit-gradient(linear,left top,right top,from(#5d9cec),to(#23b7e5)) repeat scroll 0 0;
+  background: linear-gradient(90deg,#5d9cec,#23b7e5) repeat scroll 0 0;
+  width:100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  color: $color__blue-gray;
+  position: relative;
+  .bg-particles{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  h1{
+    color: $color__white;
+    font-weight: 300;
+    margin: 70px auto;
+    a{
+      color: $color__white;
+    }
+    img{
+      max-height: 70px;
+    }
+  }
+  .inner-container{
+    padding: 50px 0;
+    @media (max-width: 600px) {
+      padding: 0 20px 50px;
+    }
+    .login-box {
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 2px 0 rgba(53, 65, 83, .12), 0 2px 4px 0 rgba(53, 65, 83, .12);
+      box-shadow: 0 0 2px 0 rgba(53, 65, 83, .12), 0 2px 4px 0 rgba(53, 65, 83, .12);
+      width: 100%;
+      padding: 20px 20px 40px;
+      overflow: auto;
+      position: relative;
+      @media (min-width: 601px) {
+        width: 400px;
+        padding: 20px 40px 40px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}
+
+
+//Tabs on top of login box
+.login-tabs-container{
+  max-width: 150px;
+  margin: 0 auto 45px;
+  position: relative;
+  .login-tabs{
+    @extend .list-reset;
+    @include clearfix();
+    .login-tabs__tab{
+      display: inline-block;
+      width: 50%;
+      float: right;
+      &.center{
+        width: 50%;
+        float: none;
+      }
+      a{
+        @include text($text__size--m,$text__line--m);
+        color: $color__gray--dark;
+        text-decoration: none;
+        padding: 10px 0;
+        display: block;
+      }
+      &.active a{
+        color: $color__blue;
+      }
+    }
+  }
+  .login-tabs-underline{
+    position: absolute;
+    width: 50%;
+    left:37.5px;
+    height: 3px;
+    -webkit-transition: left .5s cubic-bezier(.23,1,.32,1);
+    transition: left .5s cubic-bezier(.23,1,.32,1);
+    background-color: $color__blue;
+  }
+}
+
+//login form styling
+div[class$="content"] {
+  display: none;
+  .form-input {
+    input[name=password] {
+      padding-left: 40px;
+    }
+  }
+  .form-alert {
+    //display: none;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: right;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    span {
+      background: #e2e2e2 !important;
+      padding: 2px 5px;
+      @include text($text__size--s, $text__line--s);
+      border-radius: 3px;
+    }
+    &.text-danger{
+      background: #f47f7f;
+      border-color: rgba(0, 0, 0, 0.1);
+      color: $color__white;
+      span {
+        color: #c63c32;
+      }
+    }
+  }
+
+  .form-submit {
+    text-align: right;
+    .btn {
+      padding: 19px 57px !important;
+    }
+  }
+
+  .remember-info{
+    display: inline-block;
+    top: -22px;
+    right: 11px;
+  }
+
+  .pass-recovery{
+    position: absolute;
+    bottom: 68px;
+    left: 40px;
+  }
+
+  @media (max-width: 600px) {
+    .form-alert{
+      text-align: center;
+    }
+    .form-submit{
+      text-align: center;
+      .btn {
+        padding: 15px 0 !important;
+        width: 230px;
+      }
+    }
+    .remember-info{
+      display: block;
+      top: 0;
+      right: 0;
+    }
+    .pass-recovery{
+      position: static;
+    }
+  }
+
+}

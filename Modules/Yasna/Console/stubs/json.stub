@@ -1,0 +1,28 @@
+{
+    "name": "$STUDLY_NAME$",
+    "alias": "$LOWER_NAME$",
+    "description": "$DESCRIPTION$",
+    "version": "$VERSION$",
+    "release_date": "$RELEASE_DATE$",
+    "title": "$TITLE$",
+    "authors": [
+        {
+            "name": "$AUTHOR_NAME$",
+            "email": "$AUTHOR_EMAIL$"
+        }
+    ],
+    "keywords": [],
+    "active": 1,
+    "order": $ORDER$,
+    "providers": [
+        "$MODULE_NAMESPACE$\\$STUDLY_NAME$\\Providers\\$STUDLY_NAME$ServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "parent_modules": [
+        $PARENT_MODULES$
+    ],
+    "requires": []
+}

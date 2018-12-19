@@ -1,0 +1,44 @@
+/*
+*-------------------------------------------------------
+* Grid
+*-------------------------------------------------------
+*/
+
+.deleted-content{
+  background: repeating-linear-gradient(150deg, #f3f3f3, #f3f3f3 10px, #f9f9f9 10px, #f9f9f9 21px) !important;
+  a,i{
+    color: #8c8c8c;
+  }
+  label{
+    background: #8c8c8c;
+    a,i{
+      color: #fff;
+    }
+  }
+}
+
+td.dropdown {
+  a {
+    color: #565656;
+    font-size: 10px;
+  }
+}
+
+.paginate {
+  text-align: center;
+}
+
+.null {
+  color: #b3b3b3;
+  padding: 40px;
+}
+
+div.grid_count {
+  font-weight: 200;
+  font-size: 10px;
+  color: #BBBBBB ;
+  //position: relative;
+  //top: +15px;
+  margin: auto 10px;
+  text-align: $end;
+}

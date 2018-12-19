@@ -1,0 +1,28 @@
+{
+    "name": "Notifier",
+    "alias": "notifier",
+    "description": "a module to manage all Yasna notifications",
+    "version": "0.5.0",
+    "release_date": "@TODO",
+    "title": "هشدار",
+    "authors": [
+        {
+            "name": "Taha Kamkar",
+            "email": "taha@yasna.team"
+        }
+    ],
+    "keywords": [],
+    "active": 1,
+    "order": 5,
+    "providers": [
+        "Modules\\Notifier\\Providers\\NotifierServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "parent_modules": [
+        "Yasna"
+    ],
+    "requires": []
+}

@@ -1,0 +1,48 @@
+/*
+*-------------------------------------------------------
+* profile
+*-------------------------------------------------------
+*/
+
+.profile {
+  table {
+    width: 100%;
+    //border: 1px solid black;
+  }
+
+  td {
+    padding: 10px;
+    font-size: 14px;
+
+    span {
+      @include margin-start(20px);
+    }
+  }
+
+  td.head {
+    width: 110px;
+    text-align: $end;
+    font-weight: 700;
+  }
+
+}
+
+.user-profile{
+  .half-float{
+    .half-float-bottom{
+      right: auto;
+      left: auto;
+      margin: unset;
+    }
+    &.gradient{
+      background: linear-gradient(#23b7e5, #23dce5);
+    }
+
+    .header{
+      min-height: 80px;
+    }
+  }
+  .user-title{
+    @include padding-start(170px);
+  }
+}

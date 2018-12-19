@@ -1,0 +1,28 @@
+{
+    "name": "Yasna",
+    "alias": "yasna",
+    "description": "Yasna Core Module",
+    "version": "1.0.0",
+    "release_date": "2017-08-19",
+    "title": "\u06cc\u0633\u0646\u0627 \u0648\u0628 \u06f3",
+    "authors": [
+        {
+            "name": "Taha M Kamkar",
+            "email": "taha@yasnateam.com"
+        }
+    ],
+    "keywords": [],
+    "active": 1,
+    "order": 1,
+    "providers": [
+        "Modules\\Yasna\\Providers\\YasnaServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": [],
+    "user_traits": [
+        "\\Modules\\RolesModule\\Entities\\PermitsTrait"
+    ]
+}

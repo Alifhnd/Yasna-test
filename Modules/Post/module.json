@@ -1,0 +1,28 @@
+{
+    "name": "Post",
+    "alias": "post",
+    "description": "test for yasnaTeam",
+    "version": "0.5.0",
+    "release_date": "@TODO",
+    "title": "عیسنا تست",
+    "authors": [
+        {
+            "name": "Ali",
+            "email": "Ali.fallah9270@gmail.com"
+        }
+    ],
+    "keywords": [],
+    "active": 1,
+    "order": 100,
+    "providers": [
+        "Modules\\Post\\Providers\\PostServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "parent_modules": [
+        "Yasna"
+    ],
+    "requires": []
+}

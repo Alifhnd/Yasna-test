@@ -1,0 +1,39 @@
+/*
+*-------------------------------------------------------
+* Sidebar Avatar
+*-------------------------------------------------------
+*/
+
+.user-block-picture{
+  .user-block-status{
+    .circle{
+      z-index: 2;
+    }
+    &:after{
+      content: "\f030";
+      font-family: FontAwesome;
+      position: absolute;
+      top:2px;
+      bottom:2px;
+      @include end(2px);
+      @include start(2px);
+      background-color: rgba(255, 255, 255, 0.8);
+      color: rgba(66, 66, 66, 0.5);
+      border-radius: 50%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      $fadein: opacity 0.5s;
+      @include transition($fadein);
+    }
+    &:hover{
+      &:after{
+        opacity: 1;
+        $fadein: opacity 0.5s;
+        @include transition($fadein);
+      }
+    }
+  }
+}

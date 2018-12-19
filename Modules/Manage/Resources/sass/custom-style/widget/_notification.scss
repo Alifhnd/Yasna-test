@@ -1,0 +1,41 @@
+/*
+*-------------------------------------------------------
+* Popup Notification
+*-------------------------------------------------------
+*/
+
+.notification-bar{
+  position: absolute;
+  top: -100%;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 50px;
+  height: 55px;
+  z-index: 9010;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 0;
+  border-bottom: 3px solid #515253;
+  border-radius: 0;
+  -webkit-box-shadow: 6px 0 2px -3px rgba(0,0,0,0.15);
+  -moz-box-shadow: 6px 0 2px -3px rgba(0,0,0,0.15);
+  box-shadow: 6px 0 2px -3px rgba(0,0,0,0.15);
+  @media(min-width: 768px){
+    @include start(220px);
+  }
+  .notification-inner{
+    height: 100%;
+    position: relative;
+    line-height: 55px;
+
+    .notification-close{
+      position: absolute;
+      @include end(0);
+      top: 14px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}

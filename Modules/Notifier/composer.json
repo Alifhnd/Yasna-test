@@ -1,0 +1,15 @@
+{
+    "name": "nwidart/notifier",
+    "description": "",
+    "authors": [
+        {
+            "name": "Taha Kamkar",
+            "email": "taha@yasna.team"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modules\\Notifier\\": ""
+        }
+    }
+}

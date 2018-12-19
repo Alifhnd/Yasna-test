@@ -1,0 +1,31 @@
+/*
+*-------------------------------------------------------
+* Widget Repository
+*-------------------------------------------------------
+*/
+
+.aside{
+  .widget-repository{
+    position: absolute;
+    top: 0;
+    background: #fff;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    @media (min-width: 768px) {
+      padding-top: 55px;
+    }
+    .repo-header{
+      padding: 20px 10px 0;
+      color: #909fa7;
+    }
+    .collapsed-icon{
+      display: none;
+    }
+    .btn{
+      margin: 10px auto;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/*
+*-------------------------------------------------------
+* Button Styles
+*-------------------------------------------------------
+*/
+
+.btn{
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  &.primary{
+    background-color: rgba(255,255,255,0.4);
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+    &:hover{
+      background-color: rgba(255,255,255,0.75);
+      box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+      color: $color__orange;
+    }
+  }
+  &.secondary{
+    background-color: $color__orange;
+    color: $color__white;
+    text-decoration: none;
+    border: 0;
+    &:hover{
+      background-color: $color__orange--light;
+    }
+  }
+  &.large{
+    width: 230px;
+    padding:15px 0 !important;
+  }
+  &.medium{
+    padding:15px 0 !important;
+  }
+  &.clear{
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: 1px solid #fff;
+  }
+  &[disabled]{
+    background: #e2e2e2 !important;
+    color: #aab7c8 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+  }
+}
+

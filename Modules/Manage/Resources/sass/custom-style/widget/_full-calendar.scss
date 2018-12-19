@@ -1,0 +1,21 @@
+/*
+*-------------------------------------------------------
+* FullCalendar
+*-------------------------------------------------------
+*/
+
+.calendar-app{
+  &.fc-ltr{
+    .secondDate{
+      display: none;
+    }
+  }
+  .secondDate{
+    font-size: 15px;
+    font-weight: 400;
+    color: #a1a2a3;
+    @include margin-start(3px);
+    opacity: 0.4;
+    line-height: 1.7;
+  }
+}

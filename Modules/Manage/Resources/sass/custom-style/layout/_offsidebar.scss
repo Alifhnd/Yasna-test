@@ -1,0 +1,16 @@
+/*
+*-------------------------------------------------------
+* Offsidebar
+*-------------------------------------------------------
+*/
+
+.offsidebar{
+  #widgetSettingContainer{
+    .dropdown-menu{
+      max-width: 100%;
+      ul.dropdown-menu.inner{
+        overflow-x: hidden;
+      }
+    }
+  }
+}

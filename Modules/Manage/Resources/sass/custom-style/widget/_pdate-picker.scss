@@ -1,0 +1,13 @@
+/*
+*-------------------------------------------------------
+* PDatePicker
+*-------------------------------------------------------
+*/
+
+.twin{
+  display: flex;
+  flex-direction: row;
+  input:first-child{
+    @include margin-end(5px);
+  }
+}

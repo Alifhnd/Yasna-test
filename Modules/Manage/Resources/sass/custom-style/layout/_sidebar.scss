@@ -1,0 +1,39 @@
+/*
+*-------------------------------------------------------
+* Sidebar
+*-------------------------------------------------------
+*/
+.counter {
+  position: relative;
+  top: -10px;
+  @include end(-10px);
+}
+
+
+#sidebarHandle {
+  position: fixed;
+  font-size: 30px;
+  @include start(30px);
+  bottom: 30px;
+  //color: #337ab7 ;
+  opacity: 0.3;
+  z-index: 10000;
+}
+#sidebarHandle.gray {
+  color: #d8d8d8;
+}
+#sidebarHandle:hover {
+  cursor: pointer;
+  color: #23527C ;
+  opacity: 0.6;
+}
+.label{
+  padding-top: 0.4em;
+  font-size: 12px;
+}
+
+.theme-label.checked{
+  .icon-check{
+    opacity: 1 !important;
+  }
+}

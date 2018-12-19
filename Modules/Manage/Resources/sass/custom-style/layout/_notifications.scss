@@ -1,0 +1,61 @@
+/*
+*-------------------------------------------------------
+* Notifications
+*-------------------------------------------------------
+*/
+
+.notifications-pane{
+
+  .icon-sm{
+    i.fa{
+      font-size: inherit;
+    }
+  }
+
+  .notification-item{
+    background-color: transparent;
+    text-decoration: none;
+
+    .notifications-icon{
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      @include margin-end(20px);
+    }
+
+    .media-box-body{
+      color: #626465;
+      .title{
+        color: #3e3e3e;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    }
+
+    &.read{
+      background-color: rgba(0, 0, 0, 0.025);
+      .media-box-body{
+        .title{
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.notifications-page{
+  .notification-item{
+    display: block;
+    &:not(:last-child){
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.025);
+    }
+  }
+}
+

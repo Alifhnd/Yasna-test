@@ -1,0 +1,30 @@
+/*
+*-------------------------------------------------------
+* Color Picker
+*-------------------------------------------------------
+*/
+
+.color-picker{
+  input{
+    direction: ltr;
+  }
+}
+.input-group-addon{
+  position: relative;
+}
+.vc-chrome {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 9;
+  .vc-chrome-body{
+    direction: ltr;
+  }
+}
+.current-color {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  cursor: pointer;
+}

@@ -1,0 +1,102 @@
+/*
+*-------------------------------------------------------
+* Navbar
+*-------------------------------------------------------
+*/
+
+.brand-logo {
+  height: 55px;
+  overflow: hidden;
+  padding: 5px 15px !important;
+  img {
+    height: 100%;
+  }
+}
+
+.brand-logo-collapsed {
+  height: 55px;
+  overflow: hidden;
+  img {
+    height: 100%;
+  }
+}
+
+.layout-fixed .wrapper .topnavbar-wrapper {
+  left: 0;
+  right: 0;
+}
+
+a.navbar-brand {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+a.navbar-brand-sub {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+span.navbar-brand {
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+  font-weight: 200;
+  font-size: 12px;
+  color: #565656;
+  padding-right: 10px;
+  @include padding-start(10px);
+  i {
+    @include padding-end(5px);
+    font-size: 11px;
+  }
+}
+
+.navbar-top-links {
+  .dropdown-toggle {
+    font-size: 15px;
+
+    .fa-caret-down {
+      font-size: 12px;
+    }
+  }
+}
+
+.add-menu li {
+  .media-box-body > p {
+    //line-height: 30px;
+  }
+  a.list-group-item {
+    padding: 10px;
+    border-bottom: 1px solid #e4eaec;
+  }
+  .list-group-item:last-child {
+    border-bottom: 1px solid #e4eaec;;
+  }
+}
+
+.list-group-item {
+  .media-box > .pull-left {
+    width: 32px;
+  }
+}
+
+.navbar {
+  .nav-wrapper {
+    .notification {
+      .label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        padding: 2px 5px;
+
+        @media (max-width: 767px) {
+          top: 0;
+        }
+      }
+    }
+  }
+}

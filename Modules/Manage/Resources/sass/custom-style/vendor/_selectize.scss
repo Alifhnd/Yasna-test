@@ -1,0 +1,13 @@
+/*
+*-------------------------------------------------------
+* Selectize
+*-------------------------------------------------------
+*/
+
+// Selectize fix for disappearing bug
+.selectize-control{
+  .selectize-input > input {
+    left: 0 !important;
+  }
+}
+

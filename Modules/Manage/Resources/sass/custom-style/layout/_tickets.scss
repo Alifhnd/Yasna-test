@@ -1,0 +1,21 @@
+/*-----------------------------------------------------------------
+- Tickets
+-----------------------------------------------------------------*/
+.timeline:before{
+	right: 20px !important;
+}
+.timeline > li > .timeline-badge{
+	right: 20px !important;
+}
+.timeline > li {
+	width: 100% !important;
+}
+.timeline > li > .timeline-panel, .timeline-alt > li > .timeline-panel {
+	margin-right: 60px !important;
+}
+.timeline > li.timeline-inverted{
+	margin-top: 0 !important;
+}
+.timeline .popover{
+	font-family: Vazir, sans-serif;
+}

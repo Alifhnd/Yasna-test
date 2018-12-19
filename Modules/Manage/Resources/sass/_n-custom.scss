@@ -1,0 +1,942 @@
+/*
+|--------------------------------------------------------------------------
+| Font Corrections
+|--------------------------------------------------------------------------
+|
+*/
+*{
+  font-size: 14px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| General Body
+|--------------------------------------------------------------------------
+|
+*/
+body {
+  margin-top: 0;
+}
+
+thead {
+  td {
+    font-weight: bold;
+  }
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  text-align: right;
+
+}
+
+div.bootstrap-select {
+  .bs-caret {
+    position: absolute;
+    left: 30px;
+    top: 45%;  }
+
+}
+
+.text-gray{
+  color: #bdc3c5 !important;
+}
+
+  /*
+  |--------------------------------------------------------------------------
+  | Navbar & Sidebar
+  |--------------------------------------------------------------------------
+  |
+  */
+
+.brand-logo{
+  height: 55px;
+  overflow: hidden;
+  padding: 5px 15px !important;
+  img{
+    height: 100%;
+  }
+}
+.brand-logo-collapsed{
+  height: 55px;
+  overflow: hidden;
+  img{
+    height: 100%;
+  }
+}
+
+.layout-fixed .wrapper .topnavbar-wrapper{
+  left:0;
+  right:0;
+}
+
+a.navbar-brand {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+a.navbar-brand-sub {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Yekan;
+}
+
+span.navbar-brand {
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: Yekan;
+}
+
+.dropdown-menu {
+  right: auto;
+  left: 0;
+
+}
+
+.navbar-top-links .dropdown-menu li a {
+  font-weight: 200;
+  font-size: 12px;
+  color: #565656;
+  padding-right: 10px;
+  i {
+    padding-left: 5px;
+    font-size: 11px;
+  }
+}
+
+.navbar-top-links {
+  .dropdown-toggle {
+    font-size: 15px;
+
+    .fa-caret-down {
+      font-size: 12px;
+    }
+  }
+}
+
+.add-menu li{
+  .media-box-body > p{
+    //line-height: 30px;
+  }
+  a.list-group-item{
+    padding:10px;
+    border-bottom: 1px solid #e4eaec;
+  }
+  .list-group-item:last-child{
+    border-bottom: 1px solid #e4eaec;;
+  }
+}
+
+
+#side-menu {
+  li a {
+    font-family: Yekan;
+    font-size: 14px;
+  }
+}
+
+.counter {
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+
+#sidebarHandle {
+  position: fixed;
+  font-size: 30px;
+  right: 30px;
+  bottom: 30px;
+  //color: #337ab7 ;
+  opacity: 0.3;
+  z-index: 10000;
+}
+#sidebarHandle.gray {
+  color: #d8d8d8;
+}
+#sidebarHandle:hover {
+  cursor: pointer;
+  color: #23527C ;
+  opacity: 0.6;
+}
+.label{
+  padding-top: 0.4em;
+  font-size: 12px;
+}
+
+/*.setting-color{
+  .theme-label{
+    display: block;
+    position: relative;
+    margin: 0 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-left: 0;
+    }
+
+    .color {
+      display: block;
+      height: 18px;
+    }
+
+    .split {
+      display: block;
+      &:before,
+      &:after{
+        content: " ";
+        display: table;
+      }
+      &:after{
+        clear: both;
+      }
+
+
+    }
+
+  }
+}*/
+
+.theme-label.checked{
+  .icon-check{
+    opacity: 1 !important;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Toolbars
+|--------------------------------------------------------------------------
+|
+*/
+.panel-toolbar {
+  //width: 100%;
+  //margin: auto;
+  //Negar Commented!
+
+  p.title {
+    margin: 10px;
+    font-family: Yekan;
+    font-size: 17px;
+    color: #282828;
+    padding: 10px;
+  }
+  .tools {
+    text-align: left;
+    margin: 10px auto;
+    .btn , .search ,.dropdown , .dropdown > button{
+      margin-top: 2px;
+      margin-bottom: 2px;
+
+      @media (max-width:425px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .search {
+    input, button {
+      font-size: 10px;
+    }
+  ;
+  }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Grid
+|--------------------------------------------------------------------------
+|
+*/
+
+.table-hover > tbody > tr:hover{
+  background: #f5f5f5;
+}
+
+.deleted-content{
+  //background: #e2e2e2 !important;
+  //filter: grayscale(100%);
+  background: repeating-linear-gradient(150deg, #ddd, #ddd 10px, #ebebeb 10px, #ebebeb 20px) !important;
+  a,i{
+    color: #8c8c8c;
+  }
+  label{
+    background: #8c8c8c;
+    a,i{
+      color: #fff;
+    }
+  }
+}
+
+td.dropdown {
+  a {
+    color: #565656;
+    font-size: 10px;
+  }
+}
+
+.paginate {
+  text-align: center;
+}
+
+.null {
+  color: #b3b3b3;
+  padding: 40px;
+}
+
+div.grid_count {
+  font-weight: 200;
+  font-size: 10px;
+  color: #BBBBBB ;
+  //position: relative;
+  //top: +15px;
+  margin: auto 10px;
+  text-align: left;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Modal
+|--------------------------------------------------------------------------
+|
+*/
+.modal-title {
+  font-weight: 500;
+  font-family: Yekan;
+  font-size: 16px;
+}
+
+.modal-wait {
+  margin: 20px ;
+}
+
+.modal-body{
+  max-height: 70vh;
+  overflow-y: auto;
+
+}
+
+.modal-wait{
+  height: 40px;
+}
+
+/*.content-wrapper{
+.modal-dialog{
+  position: fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%) !important;
+  -moz-transform: translate(-50%,-50%) !important;
+  -ms-transform: translate(-50%,-50%) !important;
+  -o-transform: translate(-50%,-50%) !important;
+  transform: translate(-50%,-50%) !important;
+  @media (max-width: 767px) {
+    -webkit-transform: translate(0, 0) !important;
+    -moz-transform: translate(0, 0) !important;
+    -ms-transform: translate(0, 0) !important;
+    -o-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
+    top:7%;
+    left: 20px;
+    right: 20px;
+
+  }
+}
+}*/
+/*
+|--------------------------------------------------------------------------
+| Profile
+|--------------------------------------------------------------------------
+|
+*/
+.profile {
+  table {
+    width: 100%;
+    //border: 1px solid black;
+  }
+
+  td {
+    padding: 10px;
+    font-size: 14px;
+
+    span {
+      margin-right: 20px;
+    }
+  }
+
+  td.head {
+    width: 110px;
+    text-align: left;
+    font-weight: 700;
+  }
+
+}
+/*
+|--------------------------------------------------------------------------
+| DashBoard
+|--------------------------------------------------------------------------
+|
+*/
+#sortable-dash .panel .panel-heading:hover{
+  cursor: move;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Other Things
+|--------------------------------------------------------------------------
+|
+*/
+
+
+div.featured_image {
+  width: 150px;
+  height: 100px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+
+  img{
+    border-radius: 5px;
+    max-width: 140px;
+    max-height: 90px;
+  }
+
+}
+
+//img.featured_image {
+//  max-width: 140px;
+//  max-height: 90px;
+//  margin: auto;
+//  border-radius: 5px;
+//  border: 1px solid gray;
+//  padding: 10px;
+//}
+
+#divHeyCheck {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  padding: 100px;
+  display: none;
+
+  iframe {
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    display: none;
+  }
+}
+
+.content-wrapper > h3 > small,
+.content-wrapper > .content-heading > small{
+  margin-top: 5px;
+}
+
+.bg-warning, .bg-danger, .bg-success, .bg-info{
+  a{
+    color: #fff !important;
+  }
+}
+
+
+/*
+*------------------------------------
+** popup notification
+*------------------------------------
+*/
+.notification-bar{
+  position: absolute;
+  top: -100%;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 50px;
+  height: 55px;
+  z-index: 9010;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 0;
+  border-bottom: 3px solid #515253;
+  border-radius: 0;
+  -webkit-box-shadow: 6px 0 2px -3px rgba(0,0,0,0.15);
+  -moz-box-shadow: 6px 0 2px -3px rgba(0,0,0,0.15);
+  box-shadow: 6px 0 2px -3px rgba(0,0,0,0.15);
+  @media(min-width: 768px){
+    right:220px;
+  }
+  .notification-inner{
+    height: 100%;
+    position: relative;
+    line-height: 55px;
+
+    .notification-close{
+      position: absolute;
+      left: 0;
+      top: 14px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+/*
+*------------------------------------
+** Trip.js dialog box
+*------------------------------------
+*/
+.trip-block {
+  background: #f5f5f5 !important;
+  color: #333 !important;
+  &:before{
+    opacity:0.5;
+  }
+  .trip-header{
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .trip-content{
+    margin: 10px;
+  }
+}
+
+/*
+*------------------------------------
+** Buttons
+*------------------------------------
+*/
+
+.btn-taha{
+  min-width: unset !important;
+  @media(min-width: 1258px){
+    min-width: 150px !important;
+  }
+}
+/*
+*------------------------------------
+** Whirl Loader
+*------------------------------------
+*/
+body .whirl.line:after {
+  box-shadow: inset -10px 0px 0px rgba(93, 156, 236, 0.5) !important;
+}
+body .whirl-body.whirl:after{
+  top: 10%;
+  top: 50vh;
+}
+/*
+*------------------------------------
+** Notification Dropdown
+*------------------------------------
+*/
+
+.list-group-item{
+  .media-box > .pull-left{
+    width: 32px;
+  }
+}
+
+/*
+*------------------------------------
+** Panel collapse button
+*------------------------------------
+*/
+.panel{
+  .collapse-btn{
+    color: #c1c2c3;
+  }
+}
+
+/*
+*------------------------------------
+** Alert style
+*------------------------------------
+*/
+
+.alert{
+  &.alert-warning{
+     background-color: #ffab5e;
+  }
+  &.alert-success{
+     background-color: #43d967;
+  }
+  &.alert-danger{
+    background-color: #f47f7f;
+  }
+  &.alert-info{
+     background-color: #51c6ea;
+  }
+}
+
+.column{
+  //width:49%;
+  //margin-right:.5%;
+  min-height:300px;
+  //background:#fff;
+  //float:left;
+}
+.column .dragbox{
+  //margin:5px 2px  20px;
+  //background:#fff;
+  position:relative;
+  //border:1px solid #ddd;
+  //-moz-border-radius:5px;
+  //-webkit-border-radius:5px;
+}
+.column .dragbox h2{
+  //margin:0;
+  //font-size:12px;
+  //padding:5px;
+  //background:#f0f0f0;
+  //color:#000;
+  //border-bottom:1px solid #eee;
+  //font-family:Verdana;
+  //cursor:move;
+}
+.dragbox-content{
+  //background:#fff;
+  //min-height:100px; margin:5px;
+  //font-family:'Lucida Grande', Verdana; font-size:0.8em; line-height:1.5em;
+}
+.column  .placeholder{
+  background: #f0f0f0;
+  border:1px dashed #ddd;
+}
+.dragbox h2.collapse{
+  background:#f0f0f0;
+}
+.dragbox h2 .configure{
+  font-size:11px; font-weight:normal;
+  margin-right:30px; float:right;
+}
+
+/*
+*-------------------------------------------------------
+* color picker
+*-------------------------------------------------------
+*/
+.color-picker{
+  input{
+    direction: ltr;
+  }
+}
+.input-group-addon{
+  position: relative;
+}
+.vc-chrome {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 9;
+  .vc-chrome-body{
+    direction: ltr;
+  }
+}
+.current-color {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  cursor: pointer;
+}
+
+/*
+*-------------------------------------------------------
+* Widget Repository
+*-------------------------------------------------------
+*/
+
+.aside{
+  .widget-repository{
+    position: absolute;
+    top: 0;
+    background: #fff;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    @media (min-width: 768px) {
+      padding-top: 55px;
+    }
+    .repo-header{
+      padding: 20px 10px 0;
+      color: #909fa7;
+    }
+    .collapsed-icon{
+      display: none;
+    }
+    .btn{
+      margin: 10px auto;
+      display: block;
+    }
+  }
+}
+
+
+/*
+*-------------------------------------------------------
+* Analog Clock
+*-------------------------------------------------------
+*/
+
+.analog-clock{
+  canvas{
+    margin: 0 auto;
+    display: block;
+  }
+}
+.dates{
+  .ltr{
+    direction: ltr;
+  }
+  .today{
+    width: 100%;
+    & *{
+      font-size: 18px;
+    }
+    .day{
+      display: inline-block;
+      margin: 0 5px;
+      color: #666;
+    }
+    .date-full{
+      display: inline-block;
+      margin: 0 5px;
+      & *{
+        color: #333;
+      }
+      .separator{
+        color: #f05050;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+/*
+*-------------------------------------------------------
+* Disabled Box
+*-------------------------------------------------------
+*/
+.disabled-box {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/*
+*-------------------------------------------------------
+* PDatePicker
+*-------------------------------------------------------
+*/
+
+.twin{
+  display: flex;
+  flex-direction: row;
+  input:first-child{
+    margin-left: 5px;
+  }
+}
+
+/*
+*-------------------------------------------------------
+* FullCalendar
+*-------------------------------------------------------
+*/
+
+.calendar-app{
+  &.fc-ltr{
+    .secondDate{
+      display: none;
+    }
+  }
+  .secondDate{
+    font-size: 15px;
+    font-weight: 400;
+    color: #a1a2a3;
+    margin-right: 3px;
+    opacity: 0.4;
+    line-height: 1.7;
+  }
+}
+
+/*
+*-------------------------------------------------------
+* Offsidebar
+*-------------------------------------------------------
+*/
+
+.offsidebar{
+  #widgetSettingContainer{
+    .dropdown-menu{
+      max-width: 100%;
+      ul.dropdown-menu.inner{
+        overflow-x: hidden;
+      }
+    }
+  }
+}
+
+/*
+*-------------------------------------------------------
+* Tiny MCE
+*-------------------------------------------------------
+*/
+
+.mce-tinymce{
+  &.mce-fullscreen{
+    top: 55px;
+    left: 0;
+    right: 220px;
+    bottom:0;
+    @media (max-width: 767px) {
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.aside-collapsed{
+  .mce-tinymce{
+    &.mce-fullscreen{
+      top: 55px;
+      left: 0;
+      right: 70px;
+      bottom:0;
+      @media (max-width: 767px) {
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+/*
+*-------------------------------------------------------
+* Sidebar Avatar
+*-------------------------------------------------------
+*/
+
+.user-block-picture{
+  .user-block-status{
+    .circle{
+      z-index: 2;
+    }
+    &:after{
+      content: "\f030";
+      font-family: FontAwesome;
+      position: absolute;
+      top:2px;
+      bottom:2px;
+      left:2px;
+      right:2px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: rgba(66, 66, 66, 0.5);
+      border-radius: 50%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      $fadein: opacity 0.5s;
+      -webkit-transition:  $fadein;
+      -moz-transition:  $fadein;
+      -ms-transition:  $fadein;
+      -o-transition:  $fadein;
+      transition:  $fadein;
+    }
+    &:hover{
+      &:after{
+        opacity: 1;
+        $fadein: opacity 0.5s;
+        -webkit-transition:  $fadein;
+        -moz-transition:  $fadein;
+        -ms-transition:  $fadein;
+        -o-transition:  $fadein;
+        transition:  $fadein;
+      }
+    }
+  }
+}
+
+/*
+*-------------------------------------------------------
+* Weather Dashboard Widget
+*-------------------------------------------------------
+*/
+
+.weather-dashboard-widget{
+  margin-bottom: 5px;
+  .widget{
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    color: #fff;
+    padding: 20px;
+    .weather-container{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .text{
+        min-width: 150px;
+        width: 50%;
+      }
+      .visual{
+        min-width: 150px;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .temperature{
+          >span{
+            font-size: 90px;
+          }
+        }
+      }
+    }
+
+    .weather-data-row {
+      .title{
+        text-align: center;
+        span{
+          line-height: 30px;
+          display: inline-block;
+          height: 30px;
+        }
+        .wi{
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+      .text{
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+      }
+      &.wind-speed{
+        .text{
+          direction: ltr;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

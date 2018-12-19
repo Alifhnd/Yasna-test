@@ -1,0 +1,63 @@
+/////////////////////////////////////////////////
+//                                             //
+//                    BASE                     //
+//                                             //
+//        Site-wide mixins and functions       //
+//                                             //
+/////////////////////////////////////////////////
+
+
+$color__white: #FFFFFF;
+$color__black: #000000;
+
+$color__orange: #ff902b;
+$color__orange--light: #ffab5e;
+
+$color__blue: #23b7e5;
+$color__blue--dark: #1b72e2;
+
+$color__success: #24b145;
+
+$color__blue-gray: #28323e;
+$color__blue-gray--dark: #212a35;
+
+$color__gray--light: #9daeb8;
+$color__gray--dark: #596974;
+
+
+// extendable classes
+.list-reset{
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+// ## Calculates em size based on required pixel size and context.
+// $target: (required) Required pixel size
+// $context: (optional) Current font size used to calculate em value
+// Returns: Em value
+@function calc-em($target, $context: $base__font-size) {
+  @return ($target / $context) * 1em;
+}
+
+// Clear fix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Transition Cross Browser
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}

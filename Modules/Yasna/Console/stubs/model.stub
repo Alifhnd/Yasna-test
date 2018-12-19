@@ -1,0 +1,15 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Modules\Yasna\Services\YasnaModel;
+
+/**
+ * Class $CLASS$
+ *
+ * @package $NAMESPACE$
+ */
+class $CLASS$ extends YasnaModel
+{
+
+}

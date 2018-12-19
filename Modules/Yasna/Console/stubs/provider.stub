@@ -1,0 +1,23 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Modules\Yasna\Services\YasnaProvider;
+
+/**
+ * Class $CLASS$
+ *
+ * @package $NAMESPACE$
+ */
+class $CLASS$ extends YasnaProvider
+{
+    /**
+     * provide an index of the custom methods must be executed DURING provider boot sequence.
+     *
+     * @return void
+     */
+    public function index()
+    {
+        // Call your methods here!
+    }
+}
